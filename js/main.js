@@ -139,7 +139,7 @@ function resetBoard(){
   //SHOW QUESTION TO USER AND GET THEIR ANSWER
 
   function showQuestion(clue,target,boxValue){
-    let userAnswer = prompt(clue.question).toLocaleLowerCase();
+    let userAnswer = prompt(clue.question).toLowerCase();
     let correctAnswer = clue.answer.toLocaleLowerCase().replace(/<\/?[^>]+(>|$)/g, "")
     let possiblePoints = +(boxValue)
     target.innerHTML = clue.answer
